@@ -11,9 +11,9 @@
         android:layout_height="match_parent"
         android:background="@color/inputColor"
         android:textSize="30dp"
-
         android:text="0"
         android:focusable="false"
+        android:gravity="right"
         android:layout_weight="2.5"
         android:id="@+id/input"
         />
@@ -22,6 +22,7 @@
         android:layout_height="match_parent"
         android:layout_weight="3"
         android:background="@color/inputColor"
+        android:focusable="false"
         android:id="@+id/error"
         />
         <LinearLayout
@@ -203,12 +204,15 @@
                 android:layout_weight="4"
                 android:orientation="vertical">
 
-                <ImageButton
+                <Button
                     android:id="@+id/delete"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/buttons_colors"
                     android:layout_weight="1"
+                    android:background="@drawable/buttons_colors"
+                    android:onClick="writting"
+                    android:text="CE"
+                    android:textColor="@color/inputColor"
                     app:srcCompat="@android:drawable/ic_input_delete" />
 
                 <Button

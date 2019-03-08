@@ -9,12 +9,14 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+
     private String firstAmount = "",secondAmount = "";
     private static Button value;
     private EditText input,error;
     private char operator = ' ';
     String operators = "/*-+";
     private boolean period = false, result = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,11 +34,19 @@ public class MainActivity extends AppCompatActivity {
                     input.setText(firstAmount);
                 } else if(operator != ' '){
                     secondAmount = secondAmount + value.getText().toString();
-                    input.setText(firstAmount+operator+secondAmount);
+                    input.setText(firstAmount + operator + secondAmount);
                 }
             }
         }catch(Exception e){
-            if(operator==' ') {
+            if(value.getText().toString().equals("CE")){
+                operator=' ';
+                result = false;
+                period = false;
+                input.setText("0");
+                error.setText("");
+                firstAmount = "";
+                secondAmount = "";
+            }else if(operator==' ') {
                 switch (value.getText().charAt(0)) {
                     case '/':
                         input.setText(input.getText().toString() + "/");
@@ -80,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
                     && !secondAmount.equals("") && !firstAmount.equals("")
                     && secondAmount.charAt(secondAmount.length()-1)!='.'){
                 result = true;
-                error.setText("el punto es "+period);
                 switch (operator) {
                     case '/':
                         if(Double.parseDouble(secondAmount)==0.0){
