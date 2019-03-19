@@ -32,5 +32,11 @@
             android:id="@+id/registrar"
             android:onClick="registrar"
             android:text="Registrar"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelar"
+            android:onClick="cancelar"
+            android:text="Cancelar"/>
     </LinearLayout>
 </LinearLayout>
