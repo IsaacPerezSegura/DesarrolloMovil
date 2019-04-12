@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Idiomas</string>
+    <string name="txt1">This</string>
+    <string name="txt2">is</string>
+    <string name="txt3">a</string>
+    <string name="txt4">text</string>
+    <string name="txt5">in</string>
+    <string name="txt6">English</string>
+</resources>

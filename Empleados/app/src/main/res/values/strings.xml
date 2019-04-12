@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Empleados</string>
+    <string name="field_name">Nombre:</string>
+    <string name="field_lastNameF">Apellido paterno:</string>
+    <string name="field_lastNameM">Apellido materno:</string>
+    <string name="field_age">Edad:</string>
+    <string name="field_nomina">No. Nomina:</string>
+    <string name="field_telefono">Telefono:</string>
+    <string name="field_area">Area:</string>
+    <string name="title_activity_informacion_principal">InformacionPrincipal</string>
+    <string name="field_correo">Correo:</string>
+    <string name="calleNumero">Calle y numero:</string>
+    <string name="field_puesto">Puesto:</string>
+    <string name="field_colonia">Colonia:</string>
+    <string name="field_ciudad">Ciudad:</string>
+    <string name="field_estado">Estado:</string>
+    <string name="field_estadoCivil">Estado civil:</string>
+    <string name="field_nacionalidad">Nacionalidad:</string>
+    <string name="field_rfc">RFC:</string>
+    <string name="field_curp">CURP:</string>
+    <string name="field_nss">NSS:</string>
+    <string name="field_escolaridad">Escolaridad:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
